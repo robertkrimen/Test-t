@@ -1,6 +1,10 @@
 package Test::t;
 # ABSTRACT: 0 to t in 1 line
 
+=head1 SYNOPSIS
+
+=cut
+
 use strict;
 use warnings;
 
