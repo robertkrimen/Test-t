@@ -49,6 +49,8 @@ BEGIN {
 
 }
 
+require File::Spec;
+
 BEGIN {
     @ISA = qw/ Test::Builder::Module /;
 }
@@ -64,6 +66,11 @@ sub import {
 
     goto &Test::Most::import; # Let the good Test::Most do the magic
 
+}
+
+sub path { 
+    shift;
+    File::Spec->canonpath( @_ );
 }
 
 1;
