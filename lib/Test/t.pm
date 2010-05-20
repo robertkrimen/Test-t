@@ -44,7 +44,6 @@ our ( @ISA, @EXPORT );
 BEGIN {
 
     require Test::Most;
-    @EXPORT = @Test::Most::EXPORT;
     Test::Most->import;
 
 }
@@ -55,8 +54,10 @@ BEGIN {
     @ISA = qw/ Test::Builder::Module /;
 }
 
+@EXPORT = @Test::Most::EXPORT;
+
 sub import {
-    
+
     strict->import;
     warnings->import;
 

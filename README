@@ -2,7 +2,7 @@ NAME
     Test::t - 0 to testing in 1 line
 
 VERSION
-    version 0.003
+    version 0.0031
 
 SYNOPSIS
         #!/usr/bin/env perl

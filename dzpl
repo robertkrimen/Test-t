@@ -1,7 +1,7 @@
 #!/usr/bin/env perl
 use Dzpl
     name => 'Test-t',
-    version => '0.003',
+    version => '0.0031',
     author => 'Robert Krimen <robertkrimen@gmail.com>',
     license => 'Perl5',
     copyright => 'Robert Krimen',
@@ -13,15 +13,4 @@ use Dzpl
     /;
 ;
 
-plugin
-    '@Basic' => qr/Readme$/,
-    'PkgVersion',
-    'PodWeaver',
-    'ReadmeFromPod',
-    '=Dist::Dzpl::Plugin::DynamicManifest',
-    '=Dist::Dzpl::Plugin::CopyReadmeFromBuild',
-;
-
-run;
-
-
+{ plugin '@ROKR' }
